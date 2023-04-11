@@ -31,15 +31,15 @@ body {
 }
 
 .availability.full {
-    background-color: rgba(128, 0, 0, 0.09);
+    background-color: rgba(128, 0, 0, 0.208);
 }
 
 .availability.warn {
-    background-color: rgba(128, 75, 0, 0.09);
+    background-color: rgba(128, 75, 0, 0.215);
 }
 
 .availability.free {
-    background-color: rgba(0, 128, 0, 0.09);
+    background-color: rgba(0, 128, 0, 0.215);
 }
 
 .availability.full .indicator::after {
