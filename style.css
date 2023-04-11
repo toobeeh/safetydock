@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 4);
+    margin: 0;
+    font-family: 'Consolas';
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.availability {
+    border-radius: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.availability.full {
+    background-color: rgba(128, 0, 0, 0.09);
+}
+
+.availability.warn {
+    background-color: rgba(128, 75, 0, 0.09);
+}
+
+.availability.free {
+    background-color: rgba(0, 128, 0, 0.09);
+}
+
+.availability.full .indicator::after {
+    content: "🔴";
+}
+
+.availability.warn .indicator::after {
+    content: "🟠";
+}
+
+.availability.free .indicator::after {
+    content: "🟢";
+}
+
+.count {
+    font-size: 2rem;
+    font-weight: bold;
+}
